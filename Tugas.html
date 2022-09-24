@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="Tugas.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <!-- nav tablet ke atas -->
+    <ul id="nav-tablet">
+      <li><a href>Home</a></li>
+      <li><a href>Product</a></li>
+      <li><a href>Galery</a></li>
+      <li><a href>Blog</a></li>
+      <li><a href>Inventory</a></li>
+    </ul>
+
+    <!-- nav mobile ke bawah -->
+    <button id="nav-mobile">Menu</button>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="container-2">
+        <div class="sidebar">
+          <img src="images/user.jpeg" alt="Gambar user" />
+          <div class="name">
+            <h2 id="name"></h2>
+            <p id="Role"></p>
+
+            <div class="button">
+              <button class="btn-kontak" href="#">Kontak</button>
+              <button class="btn-resume" href="#">Resume</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-2">
+          <div class="sidebar-left">
+            <p>Availbility</p>
+            <p>Age</p>
+            <p><b>Country</p>
+            <p>Years</p>
+            <p>Email</p>
+          </div>
+
+          <div class="sidebar-right">
+            <p id="Availbility"></p>
+            <p id="Age"></p>
+            <p id="Country"></p>
+            <p id="Years"></p>
+            <p id="Email"></p>
+          </div>
+        </div>
+      </div>
+
+      <!--form star-->
+      <form class="container-form" onsubmit="submitForm()">
+        <div>
+          <label for="name"><b>Nama</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-name" placeholder="" />
+          <br />
+          <label for="Role"><b>Role</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Role" placeholder="" />
+          <br />
+          <label for="availbility"><b>Availbility</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Availbility" placeholder="" />
+          <br />
+          <label for="Age"><b>Age</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Age" placeholder="" />
+          <br />
+          <label for="Country"><b>Country</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Country" placeholder="" />
+          <br />
+          <label for="Years"><b>YearsExperience</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Years" placeholder="" />
+          <br />
+          <label for="Email"><b>Email</b></label>
+          <br />
+          <input class="input-box" type="text" id="input-Email" placeholder="" />
+          <br />
+        </div>
+
+        <button class="submit" type="submit" value="submit">Submit</button>
+      </form>
+
+
+      <script>
+        function submitForm() {
+          event.preventDefault();
+
+          const name = document.getElementById("input-name").value;
+          document.getElementById("name").innerText = name;
+
+          const Role = document.getElementById("input-Role").value;
+          document.getElementById("Role").innerText = Role;
+
+          const Availbility =
+            document.getElementById("input-Availbility").value;
+          document.getElementById("Availbility").innerText = Availbility;
+
+          const Age = document.getElementById("input-Age").value;
+          document.getElementById("Age").innerText = Age;
+
+          const Country = document.getElementById("input-Country").value;
+          document.getElementById("Country").innerText = Country;
+
+          const Years = document.getElementById("input-Years").value;
+          document.getElementById("Years").innerText = Years;
+
+          const Email = document.getElementById("input-Email").value;
+          document.getElementById("Email").innerText = Email;
+        }
+      </script>
+    </div>
+  </header>
+</body>
+
+</html>

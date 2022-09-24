@@ -1,0 +1,169 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(116, 209, 240);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #27afb4;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: rgb(78, 78, 78);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+header {
+  background-color: rgb(116, 209, 240)
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.container-2 {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(116, 209, 240);
+
+
+
+}
+
+.sidebar {
+  display: flex;
+  width: 360px;
+  height: auto;
+  background-color: rgb(116, 209, 240);
+  margin-left: 70px;
+
+}
+
+.sidebar img {
+  margin-top: 15px;
+  width: 120px;
+  height: 150px;
+
+
+}
+
+.name {
+  margin-left: 20px;
+}
+
+.name p {
+  margin-top: -10px;
+
+}
+
+.btn-kontak {
+  font-weight: bold;
+  margin-right: 10px;
+  background-color: blue;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 7px;
+}
+
+.btn-resume {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  font-weight: bold;
+  border-radius: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sidebar {
+  margin: 20px;
+  padding: 20px;
+}
+
+.sidebar-2 {
+  margin-left: 70px;
+  display: flex;
+
+}
+
+.sidebar-left {
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+form {
+  background: rgb(116, 209, 240);
+  margin-top: 50px;
+
+}
+
+input {
+  width: 100%;
+  padding: 7px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: large;
+}
+
+@media only screen and (max-width: 701px) {
+  #nav-tablet {
+    display: none;
+  }
+
+  #nav-mobile {
+    display: block;
+  }
+
+  nav {
+    background-color: rgb(245, 245, 245);
+  }
+
+  content {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+}
